@@ -43,8 +43,9 @@ def write_marker_pair(file, wav_filename, start, duration):
     print(wav_filename, file=file)
     print("//", file=file)
     pass
+
 def main():
-    parser = argparse.ArgumentParser(description="Convert CSV with ranged markers (from Audition) to .m3u with playnback/pause markers for VLC")
+    parser = argparse.ArgumentParser(description="Convert CSV with ranged markers (from Audition) to .m3u with playback/pause markers for VLC")
     parser.add_argument('infile', metavar='file.csv', type=argparse.FileType('r'))
 
     args = parser.parse_args()
